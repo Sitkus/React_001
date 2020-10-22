@@ -4,12 +4,8 @@ import {
   Switch,
   Route
 } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import './main.scss';
+import { Header, Footer } from './components';
+import { Home, About, Contact } from './pages';
 
 const Routes = () => {
   return (

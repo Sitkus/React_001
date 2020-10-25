@@ -1,10 +1,13 @@
 import React from 'react';
+import * as Style from './Footer.style';
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+  
   return (
-    <footer className="footer">
-      <p className="footer__body">Copyright thing here</p>
-    </footer>
+    <Style.Footer>
+      <p className="footer__body">© { currentYear } Copyright</p>
+    </Style.Footer>
   );
 }
 

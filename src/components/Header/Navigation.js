@@ -1,18 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import * as Style from './Navigation.style';
 
 const Navigation = () => {
   return (
-    <nav className="nav">
+    <Style.Nav>
       <div className="nav__logo">
-        <a href="" className="nav__logo-link">Logo</a>
+        <Style.NavLink to={ '/' }>Logo</Style.NavLink>
       </div>
-      <ul className="nav__list">
-        <li className="nav__item"><Link to={ '/' } className="nav__link">Home</Link></li>
-        <li className="nav__item"><Link to={ '/about' } className="nav__link">About</Link></li>
-        <li className="nav__item"><Link to={ '/contact' } className="nav__link">Contact</Link></li>
-      </ul>
-    </nav>
+      <Style.List>
+        <Style.ListItem><Style.NavLink to={ '/' }>Home</Style.NavLink></Style.ListItem>
+        <Style.ListItem><Style.NavLink to={ '/about' }>About</Style.NavLink></Style.ListItem>
+        <Style.ListItem><Style.NavLink to={ '/contact' }>Contact</Style.NavLink></Style.ListItem>
+      </Style.List>
+    </Style.Nav>
   );
 }
 

@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import { Header, Footer } from './components';
 import { Home, About, Contact } from './pages';
+import './main.css';
 
 const Routes = () => {
   return (

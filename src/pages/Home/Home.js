@@ -11,32 +11,24 @@ const Home = () => {
   return (
     <>
       <Header hero={ hero } />
-      <main className="main">
-        <div className="wrapper">
-          <Style.Section>
-            <h3 className="section__title">Network</h3>
-            <ul className="section__list">
-              <li className="section__item"><a href="#">johnny@bravo.com</a></li>
-              <li className="section__item"><a href="#">Behance</a></li>
-              <li className="section__item"><a href="#">Twitter</a></li>
-            </ul>
-          </Style.Section>
-          <Style.Section>
-            <h3 className="section__title">Skills & Focus</h3>
-            <ul className="section__list">
-              <li className="section__item">Art Direction</li>
-              <li className="section__item">Website Design</li>
-              <li className="section__item">Brand Identity Design</li>
-            </ul>
-          </Style.Section>
-        </div>
-
-        <Style.ShowcaseSection primaryColor>
-          <img src="" className="showcase__image" alt="Some image here"/>
-          <img src="" className="showcase__image" alt="Some image here"/>
-          <img src="" className="showcase__image" alt="Some image here"/>
-        </Style.ShowcaseSection>
-      </main>
+      <Style.Main>
+        <Style.Section>
+          <Style.SectionTitle>Network</Style.SectionTitle>
+          <ul className="section__list">
+            <li className="section__item"><a href="#">johnny@bravo.com</a></li>
+            <li className="section__item"><a href="#">Behance</a></li>
+            <li className="section__item"><a href="#">Twitter</a></li>
+          </ul>
+        </Style.Section>
+        <Style.Section>
+          <Style.SectionTitle>Skills & Focus</Style.SectionTitle>
+          <ul className="section__list">
+            <li className="section__item">Art Direction</li>
+            <li className="section__item">Website Design</li>
+            <li className="section__item">Brand Identity Design</li>
+          </ul>
+        </Style.Section>
+      </Style.Main>
       <Footer />
     </>
   );

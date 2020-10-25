@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
+import * as Style from './Header.style';
 import Navigation from './Navigation';
 
 const Header = ({ hero }) => {
   const [active, setActive] = useState('');
 
   return (
-    <header className="hero">
+    <Style.Header>
       <Navigation active={ active } setActive={ setActive } />
-      <article className="hero__description">
-        <h1 className="hero__title">{ hero.headline }</h1>
-        <p className="hero__body">{ hero.message }</p>
-      </article>
-    </header>
+      <Style.Description>
+        <Style.Title>{ hero.headline }</Style.Title>
+        <Style.Body>{ hero.message }</Style.Body>
+      </Style.Description>
+    </Style.Header>
   );
 }
 

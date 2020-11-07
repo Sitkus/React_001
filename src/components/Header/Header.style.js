@@ -4,7 +4,7 @@ const Header = styled.header`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 50vh;
+    min-height: 70vh;
 `;
 
 const Description = styled.article`

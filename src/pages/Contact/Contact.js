@@ -1,4 +1,6 @@
 import React from 'react';
+import * as Style from './Contact.style';
+import * as HStyle from '../Home/Home.style';
 import { Header, Footer } from '../../components';
 
 const Contact = () => {
@@ -10,9 +12,16 @@ const Contact = () => {
   return (
     <>
       <Header hero={ hero } />
-      <div>
-        <h1>Hello its my contact page</h1>
-      </div>
+      <HStyle.Main>
+        <HStyle.Section>
+          <Style.Form>
+            <Style.Input type="text" placeholder="What's up?" />
+            <Style.Input type="email" placeholder="lukas@sitkus.com" />
+            <Style.Textarea placeholder="Insert your message"></Style.Textarea>
+            <Style.Button>Send it!</Style.Button>
+          </Style.Form>
+        </HStyle.Section>
+      </HStyle.Main>
       <Footer />
     </>
   );
